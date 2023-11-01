@@ -1,8 +1,8 @@
 // Packages & imports
-package pokemon.visiotech;
+package visiotech.pokemon;
 import java.util.ArrayList;
 
-public class Pokedex {
+public class Pokedex_test {
 
     // Variables & constants
     private ArrayList<Pokemon> myPokemons;
@@ -11,7 +11,7 @@ public class Pokedex {
 
 
     // Constructors
-    Pokedex() {
+    Pokedex_test() {
         myPokemons = new ArrayList<Pokemon>();
         registeredPokemons = new ArrayList<Pokemon>();
         registeredMovements = new ArrayList<Movement>();

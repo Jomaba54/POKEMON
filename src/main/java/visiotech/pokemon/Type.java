@@ -1,4 +1,4 @@
-package pokemon.visiotech;
+package visiotech.pokemon;
 
 public enum Type {
     ACERO(0),

@@ -1,5 +1,5 @@
 // Packages & imports
-package pokemon.visiotech;
+package visiotech.pokemon;
 
 public class Battle {
 
