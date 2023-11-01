@@ -1,13 +1,13 @@
-package pokemon.visiotech;
+package visiotech.pokemon;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class VisiotechApplicationTests {
+class PokemonApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

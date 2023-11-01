@@ -1,25 +1,26 @@
 // Packages & imports
 package pokemon.visiotech;
+import java.util.ArrayList;
 
 public class Trainer {
 
     // Variables & constants
     private String name;
-    private Pokemon [] equipedPokemons;
+    private ArrayList<Pokemon> equipedPokemons;
     private final Pokedex pokedex;
 
 
     // Constructors
     Trainer(String name) {
         this.name = name;
-        equipedPokemons = new Pokemon[0];
+        equipedPokemons = new ArrayList<Pokemon>();
         pokedex = new Pokedex();
     }
 
 
     // Getters
     public String getName() { return name; }
-    public Pokemon[] getEquipedPokemons() {
+    public ArrayList<Pokemon> getEquipedPokemons() {
         return equipedPokemons;
     }
     public Pokedex getPokedex() {
@@ -31,7 +32,7 @@ public class Trainer {
     public void setName(String name) {
         this.name = name;
     }
-    public void setEquipedPokemons(Pokemon[] equipedPokemons) {
+    public void setEquipedPokemons(ArrayList<Pokemon> equipedPokemons) {
         this.equipedPokemons = equipedPokemons;
     }
 

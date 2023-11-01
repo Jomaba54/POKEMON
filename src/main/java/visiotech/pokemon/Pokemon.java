@@ -22,8 +22,7 @@ public class Pokemon {
 
 
     // Constructors
-    Pokemon(int level, String name, Type type, double totalHP, double attackPoints, double specialAttackPoints,
-            double defensePoints, double specialDefensePoints, double velocityPoints, ArrayList<Movement> movements)
+    Pokemon(int level, String name, Type type, double totalHP, double attackPoints, double specialAttackPoints, double defensePoints, double specialDefensePoints, double velocityPoints, ArrayList<Movement> movements)
     {
         this.level = level;
         this.name = name;
