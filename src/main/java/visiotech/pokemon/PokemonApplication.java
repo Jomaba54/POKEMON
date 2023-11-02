@@ -34,10 +34,10 @@ public class PokemonApplication {
 
     ArrayList<Movement> testMovementSet1 = new ArrayList<Movement>();
     ArrayList<Movement> testMovementSet2 = new ArrayList<Movement>();
-    Movement testMovement1 = new Movement("testMovement1", 5, true, Type.ELECTRICO);
-    Movement testMovement2 = new Movement("testMovement2", 2, true, Type.FUEGO);
-    Movement testMovement3 = new Movement("testMovement3", 10, true, Type.AGUA);
-    Movement testMovement4 = new Movement("testMovement4", 8, true, Type.FANTASMA);
+    Movement testMovement1 = new Movement("Thunderbolt", 90, true, Type.ELECTRICO);
+    Movement testMovement2 = new Movement("Accelerock", 40, false, Type.ROCA);
+    Movement testMovement3 = new Movement("Armor Cannon", 120, true, Type.FUEGO);
+    Movement testMovement4 = new Movement("Bug Bite", 60, false, Type.BICHO);
 
 
     public static void main(String[] args) {
@@ -52,18 +52,18 @@ public class PokemonApplication {
             testMovementSet2.add(testMovement3);
             testMovementSet2.add(testMovement4);
 
-            Pokemon testPokemon1 = new Pokemon(1, "testPokemon1", Type.PSIQUICO, 20.0, 10.0,
-                    10.0, 5.0, 5.0, 2.0, testMovementSet1, testMovementSet1);
-            Pokemon testPokemon2 = new Pokemon(1, "testPokemon2", Type.DRAGON, 20.0, 10.0,
-                    10.0, 5.0, 5.0, 2.0, testMovementSet2, testMovementSet2);
+            Pokemon testPokemon1 = new Pokemon(20, "Pikachu", Type.ELECTRICO, 35.0, 55.0,
+                    50.0, 40.0, 50.0, 90.0, testMovementSet1, testMovementSet1);
+            Pokemon testPokemon2 = new Pokemon(55, "Dragonite", Type.DRAGON, 91.0, 134.0,
+                    100.0, 95.0, 100.0, 80.0, testMovementSet2, testMovementSet2);
 
             attackTest(testPokemon1, testPokemon2);
 
-            insertDefaultPokemons(pokedex, testPokemon1, testPokemon2);
-            insertDefaultMovements(movedex);
-//
-//            System.out.println(pokedex.getAllPokemons());
-//            System.out.println(movedex.getAllMovements());
+//            insertDefaultPokemons(pokedex, testPokemon1, testPokemon2);
+//            insertDefaultMovements(movedex);
+
+            System.out.println(pokedex.getAllPokemons());
+            System.out.println(movedex.getAllMovements());
         };
     }
 

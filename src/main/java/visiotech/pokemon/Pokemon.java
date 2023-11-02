@@ -24,7 +24,7 @@ public class Pokemon {
     private double specialAttackPoints;
     private double defensePoints;
     private double specialDefensePoints;
-    private double velocityPoints;
+    private double speedPoints;
     @OneToMany
     private ArrayList<Movement> allMovements;
     @OneToMany
@@ -33,7 +33,7 @@ public class Pokemon {
 
     // Constructors
     public Pokemon(int level, String name, Type type, double totalHP, double attackPoints, double specialAttackPoints,
-            double defensePoints, double specialDefensePoints, double velocityPoints, ArrayList<Movement> allMovements,
+            double defensePoints, double specialDefensePoints, double speedPoints, ArrayList<Movement> allMovements,
             ArrayList<Movement> movementSet)
     {
         this.level = level;
@@ -45,7 +45,7 @@ public class Pokemon {
         this.specialAttackPoints = specialAttackPoints;
         this.defensePoints = defensePoints;
         this.specialDefensePoints = specialDefensePoints;
-        this.velocityPoints = velocityPoints;
+        this.speedPoints = speedPoints;
         this.allMovements = allMovements;
         this.movementSet = movementSet;
     }
@@ -70,7 +70,7 @@ public class Pokemon {
     public double getSpecialAttackPoints() { return specialAttackPoints; }
     public double getDefensePoints() { return defensePoints; }
     public double getSpecialDefensePoints() { return specialDefensePoints; }
-    public double getVelocityPoints() { return velocityPoints; }
+    public double getSpeedPoints() { return speedPoints; }
     public ArrayList<Movement> getAllMovements() {
         return allMovements;
     }
@@ -101,8 +101,8 @@ public class Pokemon {
         this.defensePoints = defensePoints;
     }
     public void setSpecialDefensePoints(double specialDefensePoints) { this.specialDefensePoints = specialDefensePoints; }
-    public void setVelocityPoints(double velocityPoints) {
-        this.velocityPoints = velocityPoints;
+    public void setSpeedPoints(double speedPoints) {
+        this.speedPoints = speedPoints;
     }
     public void setAllMovements(ArrayList<Movement> allMovements) {
         this.allMovements = allMovements;
